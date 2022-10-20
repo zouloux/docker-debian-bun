@@ -20,7 +20,7 @@ services:
 
 ### Build your own and specify bun version
 
-1. Clone this repo or download the [https://raw.githubusercontent.com/zouloux/docker-debian-bun/main/Dockerfile](Dockerfile)
+1. Clone this repo or download the [Dockerfile](https://raw.githubusercontent.com/zouloux/docker-debian-bun/main/Dockerfile)
 2. Run `docker build -t debun:X.X.X . --build-arg BUN_VERSION=X.X.X`, and replace the 2 `X.X.X` with the bun version you want.
 3. Use it with a `docker-compose.yaml` or `docker run -it debun:X.X.X`
 
