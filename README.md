@@ -5,6 +5,8 @@ Debun is a Docker image for Bun server based on the latest Debian image.
 
 ### Use it with docker-compose
 
+##### `docker-composer.yaml`
+
 ```yaml
 version: "3.7"
 services:
@@ -16,6 +18,27 @@ services:
       - './:/root'
 ```
 
+##### `package.json`
+
+```json
+{
+  "scripts" : {
+  	"start" : "bun server.ts"
+  }
+}
+
+```
+
+##### `server.ts`
+
+```ts
+export default {
+	port: 3000,
+	fetch (request) {
+		return new Response("Welcome to Bun!");
+	},
+};
+```
 
 
 ### Build your own and specify bun version
