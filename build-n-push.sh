@@ -1,5 +1,3 @@
 
-docker build -t debun .
-
-docker tag debun:latest zouloux/docker-debian-bun:latest
-docker push zouloux/docker-debian-bun:latest
+docker buildx use m1_builder || (docker buildx create m1_builder && docker buildx use m1_builder)
+docker buildx build --platform linux/amd64,linux/arm64 -f Dockerfile -t zouloux/docker-debian-bun:latest --push .

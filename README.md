@@ -2,6 +2,7 @@
 
 Debun is a Docker image for Bun server based on the latest Debian image.
 
+This docker image is built form `arm64` and `amd64`. It will work on m1 mac as well on intel architectures.
 
 ### Use it with docker-compose
 
