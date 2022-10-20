@@ -1,0 +1,9 @@
+{
+	"name": "docker-debian-bun-test",
+	"scripts": {
+		"start": "bun server.ts"
+	},
+	"dependencies": {
+		"@types/node": "^18.11.2"
+	}
+}

@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  debun :
+    build:
+      context: "../"
+      args:
+        BUN_VERSION: "0.2.1"
+    ports :
+      - '3000:3000'
+    volumes:
+      - './:/root'
